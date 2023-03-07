@@ -4,12 +4,12 @@ import TitleCard from './TitleCard'
 
 function TitleCardList() {
 	return (
-		<div className='text-white w-full mt-[13px]'>
+		<div className='text-white w-full pt-[13px] bg-[#222222]'>
 			<h2 className='text-left px-[17px]'>Популярно сегодня</h2>
 			<hr className='border-[#312F40] mt-[9px]' />
 			<div className='grid grid-cols-2 px-[17px] gap-2 mt-5'>
 				{mangas.map(manga => (
-					<TitleCard manga={manga} />
+					<TitleCard key={manga.id} manga={manga} />
 				))}
 			</div>
 		</div>

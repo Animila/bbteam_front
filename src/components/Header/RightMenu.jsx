@@ -17,7 +17,11 @@ function RightMenu(props) {
 	}
 
 	return (
-		<div className={`fixed z-[2] ${props.activeRightMenu ? '' : 'hidden'}`}>
+		<div
+			className={`fixed z-[2] bg-[#171717] ${
+				props.activeRightMenu ? '' : 'hidden'
+			}`}
+		>
 			<div
 				className={`fixed left-0 top-0 bg-black/80 w-full h-full z-[2]`}
 				onClick={props.handleActiveRightMenu}

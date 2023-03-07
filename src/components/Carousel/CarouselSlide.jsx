@@ -10,10 +10,10 @@ function CarouselSlide({ manga }) {
 			}}
 		>
 			<div className='flex flex-col justify-center z-[1] text-white'>
-				<h2 className='text-[22px] w-[185px] leading-6 font-bold'>
+				<h2 className='text-[22px] w-[185px] leading-6 font-bold mb-[11px]'>
 					{manga.title}
 				</h2>
-				<div className='text-[13px] font-medium'>
+				<div className='text-[13px] font-medium mb-[7px]'>
 					Жанры:{' '}
 					{manga.genres.map(genre => (
 						<span key={genre} className='italic'>

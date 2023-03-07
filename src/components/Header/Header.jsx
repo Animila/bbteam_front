@@ -12,7 +12,7 @@ function Header() {
 
 	return (
 		<div className='w-full bg-black h-[60px] flex items-center justify-around'>
-			<i className='fa-solid fa-bars text-white text-2xl' />
+			<i className='fa-solid fa-bars text-white text-xl' />
 
 			<img src='assets/logo.png' className='w-[28px] h-[28px]' />
 
@@ -30,7 +30,7 @@ function Header() {
 			<img
 				src={`${isLoggedIn ? 'assets/avatar.png' : 'assets/default_logo.png'}`}
 				alt=''
-				className='w-[40px] h-[40px] rounded-full'
+				className='w-[28px] h-[28px] rounded-full'
 				onClick={handleActiveRightMenu}
 			/>
 

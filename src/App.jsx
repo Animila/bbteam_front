@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-dom'
 import HomePage from './pages/HomePage'
 import React, { useEffect, useState } from 'react'
 import { AuthContext } from './context'
+import Footer from './components/Footer'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -24,6 +25,7 @@ function App() {
 				isLoading,
 			}}
 		>
+			<Header />
 			<HomePage />
 			{/* <Router>
 				<Switch>
@@ -37,6 +39,7 @@ function App() {
 					<Route path='/chapter/:id' component={ChapterPage} />
 				</Switch>
 			</Router> */}
+			<Footer />
 		</AuthContext.Provider>
 	)
 }

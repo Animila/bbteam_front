@@ -7,7 +7,23 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: './assets/manga.png',
 		url: '#',
-		chapters: []
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 	{
 		id: '2',
@@ -17,6 +33,24 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: 'assets/manga_1.png',
 		url: '#',
+		future: true,
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 	{
 		id: '3',
@@ -26,6 +60,24 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: 'assets/manga.png',
 		url: '#',
+		future: true,
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 	{
 		id: '4',
@@ -35,6 +87,24 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: 'assets/manga_1.png',
 		url: '#',
+		future: true,
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 	{
 		id: '5',
@@ -44,6 +114,24 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: 'assets/manga.png',
 		url: '#',
+		future: true,
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 	{
 		id: '6',
@@ -53,5 +141,23 @@ export default [
 		genres: ['Комедия', 'Драма'],
 		src: 'assets/manga_1.png',
 		url: '#',
+		future: true,
+		chapters: [
+			{
+				future: false,
+				number: 38,
+				time: '4 часа назад',
+			},
+			{
+				future: false,
+				number: 39,
+				time: '2 дня назад',
+			},
+			{
+				future: true,
+				number: 40,
+				time: '3 дня назад',
+			},
+		],
 	},
 ]
