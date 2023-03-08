@@ -72,7 +72,12 @@ function LoginForm(props) {
 				>
 					Войти
 				</button>
-				<a className='text-[16px] text-[#4F4F4F] mt-[24px]'>Забыли пароль?</a>
+				<a
+					className='text-[16px] text-[#4F4F4F] mt-[24px]'
+					onClick={props.switchToForgotPassword}
+				>
+					Забыли пароль?
+				</a>
 				<a
 					className='text-[16px] text-[#4F4F4F] mt-[20px] mb-[22px]'
 					onClick={props.switchToRegister}

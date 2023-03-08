@@ -1,18 +1,27 @@
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context'
+import LeftMenu from './LeftMenu'
 import RightMenu from './RightMenu'
 
 function Header() {
 	const [activeRightMenu, setActiveRightMenu] = useState(false)
+	const [activeLeftMenu, setActiveLeftMenu] = useState(false)
 	const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext)
 
 	const handleActiveRightMenu = () => {
 		setActiveRightMenu(!activeRightMenu)
 	}
 
+	const handleActiveLeftMenu = () => {
+		setActiveLeftMenu(!activeLeftMenu)
+	}
+
 	return (
 		<div className='w-full bg-black h-[60px] flex items-center justify-around'>
-			<i className='fa-solid fa-bars text-white text-xl' />
+			<i
+				className='fa-solid fa-bars text-white text-xl'
+				onClick={handleActiveLeftMenu}
+			/>
 
 			<img src='assets/logo.png' className='w-[28px] h-[28px]' />
 
@@ -37,6 +46,10 @@ function Header() {
 			<RightMenu
 				handleActiveRightMenu={handleActiveRightMenu}
 				activeRightMenu={activeRightMenu}
+			/>
+			<LeftMenu
+				handleActiveLeftMenu={handleActiveLeftMenu}
+				activeLeftMenu={activeLeftMenu}
 			/>
 		</div>
 	)

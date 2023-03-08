@@ -26,7 +26,7 @@ function TitleCard({ manga }) {
 				))}
 			</div>
 			<div className='text-[13px] italic'>
-				Глава <span>11</span>
+				Глава <span>{manga.chapters[manga.chapters.length - 1].number}</span>
 			</div>
 			<div className='absolute w-[66px] h-[24px] text-[12px] bg-[#1B1B1B] flex justify-center items-center text-[#2EC4B6] rounded-sm left-[10px] bottom-[80px]'>
 				Манга

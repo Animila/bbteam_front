@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
 	return (
-		<div className='w-full bg-[#2EC4B6] min-h-[68px] text-[10px] text-black pl-6 pt-4'>
+		<div className='flex flex-col w-full bg-[#2EC4B6] min-h-[68px] text-[10px] text-black pl-6 pt-4 pb-[14px]'>
 			<a href='#' className='mb-1'>
 				Соглашение о конфиденциальности
 			</a>

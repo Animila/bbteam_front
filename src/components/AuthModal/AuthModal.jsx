@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import RegisterForm from './RegisterForm'
 import LoginForm from './LoginForm'
+import ForgotPasswordForm from './ForgotPasswordForm'
 
 function AuthModal(props) {
 	const [formType, setFormType] = useState('login')
@@ -33,10 +34,7 @@ function AuthModal(props) {
 				<RegisterForm switchToLogin={switchToLogin} />
 			)}
 			{formType === 'forgotPassword' && (
-				<ForgotPasswordForm
-					switchToLogin={switchToLogin}
-					handleClose={handleClose}
-				/>
+				<ForgotPasswordForm switchToLogin={switchToLogin} />
 			)}
 		</div>
 	)
