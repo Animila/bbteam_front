@@ -13,24 +13,24 @@ function TitleUpdate({ manga }) {
 				</a>
 				<div className='ml-3 w-full'>
 					<h4 className='text-[16px] text-white'>{manga.title}</h4>
-					<div className='flex flex-col mt-[25px]'>
-						{manga.chapters
-							.slice(0)
-							.reverse()
-							.map(chapter => (
-								<a key={chapter.number} className={`flex justify-between `}>
-									<span
-										className={`text-[14px] ${
-											chapter.future ? 'text-[#555555]' : 'text-[#2EC4B6]'
-										}`}
-									>
-										Глава {chapter.number}
-									</span>
-									<span className='text-[11px] text-[#555555]'>
-										{chapter.time}
-									</span>
-								</a>
-							))}
+					<div className='flex flex-col mt-[18px]'>
+						{manga.chapters.slice(0).map(chapter => (
+							<a
+								key={chapter.number}
+								className={`flex justify-between mb-[10px]`}
+							>
+								<span
+									className={`text-[14px] ${
+										chapter.future ? 'text-[#555555]' : 'text-[#2EC4B6]'
+									}`}
+								>
+									Глава {chapter.number}
+								</span>
+								<span className='text-[11px] text-[#555555]'>
+									{chapter.time}
+								</span>
+							</a>
+						))}
 					</div>
 				</div>
 			</div>

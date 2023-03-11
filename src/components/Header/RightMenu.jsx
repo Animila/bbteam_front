@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context'
 import AuthModal from '../AuthModal/AuthModal'
 
 function RightMenu(props) {
-	const { setIsAuth, isAuth } = useContext(AuthContext)
+	const { setIsAuth, isAuth, countNotification } = useContext(AuthContext)
 	const [activeAuthModal, setActiveAuthModal] = useState(false)
 
 	const handlerActiveAuthModal = () => {
@@ -27,7 +28,7 @@ function RightMenu(props) {
 				onClick={props.handleActiveRightMenu}
 			></div>
 			<div
-				className={`fixed right-0 top-0 z-[99] h-full min-w-[300px] bg-[#171717] flex justify-center items-start pt-8`}
+				className={`fixed right-0 top-0 z-[99] h-full min-w-[70%] bg-[#171717] flex justify-center items-start pt-8`}
 			>
 				{!isAuth && (
 					<div>
@@ -46,18 +47,22 @@ function RightMenu(props) {
 				)}
 				{isAuth && (
 					<div className='w-full text-white'>
-						<div className='flex ml-6 mb-4'>
+						<div className='flex pl-6 mb-4'>
 							<img
 								src='assets/avatar.png'
 								alt=''
 								className='w-[40px] h-[40px] rounded-full'
 							/>
+
 							<div className='ml-4 w-full'>
 								<span className='text-[16px]'>shumerman</span>
-								<div className='flex mt-2 items-center '>
-									<img src='assets/premium.svg' alt='' />
-									<span className='text-[11px] ml-[5px]'>Премиум</span>
-									<span className='text-[#2EC4B6] text-[11px] ml-[56px]'>
+								<div className='flex mt-2 items-center justify-between'>
+									<div className='flex'>
+										<img src='assets/premium.svg' alt='' />
+										<span className='text-[11px] ml-[5px]'>Премиум</span>
+									</div>
+
+									<span className='text-[#2EC4B6] text-[11px] float-right pr-[18px]'>
 										Активен
 									</span>
 								</div>
@@ -65,13 +70,17 @@ function RightMenu(props) {
 						</div>
 						<hr />
 
-						<div className='pr-[46px] pl-[24px] mt-[25px]'>
-							<a className='flex justify-between mb-[23px]'>
+						<div className='pr-[26px] pl-[24px] mt-[25px]'>
+							<Link
+								to='/notification'
+								className='flex justify-between mb-[23px]'
+								onClick={props.handleActiveRightMenu}
+							>
 								Уведомления{' '}
 								<div className='bg-[#2EC4B6] rounded-full w-[25px] h-[25px] flex items-center justify-center text-[9px] text-black'>
-									12
+									{countNotification}
 								</div>
-							</a>
+							</Link>
 							<a className='flex justify-between mb-[30px]'>
 								Настройки
 								<svg

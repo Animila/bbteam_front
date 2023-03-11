@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context'
 
 function LeftMenu(props) {
@@ -21,6 +22,7 @@ function LeftMenu(props) {
 					/>
 				</svg>
 			),
+			url: '/',
 		},
 		{
 			user: true,
@@ -39,6 +41,7 @@ function LeftMenu(props) {
 					/>
 				</svg>
 			),
+			url: '/bookmarks',
 		},
 		{
 			title: 'Проекты',
@@ -58,7 +61,9 @@ function LeftMenu(props) {
 					/>
 				</svg>
 			),
+			url: '/titles',
 		},
+
 		{
 			title: 'Группа VK',
 			img: (
@@ -109,18 +114,19 @@ function LeftMenu(props) {
 				onClick={props.handleActiveLeftMenu}
 			></div>
 			<div
-				className={`fixed left-0 top-0 z-[99] h-full min-w-[300px] bg-[#171717] flex font-bold text-[19px] pt-8 flex-col text-white`}
+				className={`fixed left-0 top-0 z-[99] h-full min-w-[70%] bg-[#171717] flex font-bold text-[15px] pt-8 flex-col text-white`}
+				onClick={props.handleActiveLeftMenu}
 			>
 				{menu.map(url => (
-					<a
+					<Link
 						key={url.title}
-						href={url.url}
+						to={url.url}
 						className={`flex justify-between pr-[28px] pl-[27px] my-[14px] ${
 							url.user && url.user != isAuth ? 'hidden' : ''
 						}`}
 					>
 						{url.title} {url.img}{' '}
-					</a>
+					</Link>
 				))}
 
 				{/* {!isAuth && (

@@ -4,13 +4,13 @@ function CarouselSlide({ manga }) {
 	return (
 		<a
 			href={manga.url}
-			className={`h-[200px] flex items-center px-[21px] bg-no-repeat bg-cover relative`}
+			className={`w-full h-[200px] flex items-center px-2 bg-no-repeat bg-cover relative`}
 			style={{
 				backgroundImage: `url("${manga.src}")`,
 			}}
 		>
-			<div className='flex flex-col justify-center z-[1] text-white'>
-				<h2 className='text-[22px] w-[185px] leading-6 font-bold mb-[11px]'>
+			<div className='flex flex-col justify-center z-[1] text-white mr-[7px]'>
+				<h2 className='text-[22px] w-full leading-6 font-bold mb-[10px]'>
 					{manga.title}
 				</h2>
 				<div className='text-[13px] font-medium mb-[7px]'>
@@ -21,11 +21,13 @@ function CarouselSlide({ manga }) {
 						</span>
 					))}
 				</div>
-				<p className='text-[8px] leading-3'>{manga.description}</p>
+				<p className='text-[8px] leading-3 overflow-hidden text-ellipsis'>
+					{manga.description}
+				</p>
 			</div>
 			<img
 				src={manga.src}
-				className='border-[1.2px] border-[#FFFFFF]/20 rounded-md w-[123px] h-[161px] z-[1]'
+				className='border-[1.2px] border-[#FFFFFF]/20 rounded-md min-w-[123px] h-[161px] z-[1]'
 			/>
 			<div
 				className='flex flex-col justify-center absolute inset-0 z-0'

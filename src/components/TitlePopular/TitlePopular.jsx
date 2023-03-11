@@ -3,7 +3,7 @@ import React from 'react'
 function TitlePopular({ manga }) {
 	return (
 		<div>
-			<div className='flex items-center my-[16px] ml-[41px] mr-[41px] justify-between'>
+			<div className='flex items-center my-[16px] ml-[30px] mr-[5px] justify-around'>
 				<div className='h-[28px] w-[28px] flex justify-center items-center border-[1.2px] rounded text-[#888888] font-bold border-[#888888] mr-[32px]'>
 					{manga.id}
 				</div>
