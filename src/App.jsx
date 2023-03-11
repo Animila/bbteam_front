@@ -10,12 +10,16 @@ import NotificationsPage from './pages/NotificationsPage'
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
 	const [isLoading, setLoading] = useState(true)
-	const [countNotification, setNotification] = useState(0)
+	const [countTitleNotification, setCountTitleNotification] = useState(0)
+	const [countSocialNotification, setCountSocialNotification] = useState(0)
+	const [countNotification, setCountNotification] = useState(0)
 
 	useEffect(() => {
 		if (localStorage.getItem('access_token')) {
 			setIsAuth(true)
-			setNotification(6)
+			setCountNotification(90)
+			setCountTitleNotification(2)
+			setCountSocialNotification(4)
 		}
 		setLoading(false)
 	}, [])
@@ -28,7 +32,10 @@ function App() {
 					setIsAuth,
 					isLoading,
 					countNotification,
-					setNotification,
+					setCountNotification,
+					countTitleNotification,
+					setCountTitleNotification,
+					countSocialNotification,
 				}}
 			>
 				<BrowserRouter>
@@ -40,10 +47,7 @@ function App() {
 					<Footer />
 				</BrowserRouter>
 
-				{/* <Router>
-				<Switch>
-					<Route exact path='/' component={HomePage} />
-					<Route path='/notifications' component={NotificationsPage} />
+				{/* 
 					<Route path='/projects' component={ProjectsPage} />
 					<Route path='/search' component={SearchPage} />
 					<Route path='/bookmarks' component={BookmarksPage} />
