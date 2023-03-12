@@ -1,13 +1,13 @@
 import React from 'react'
-import TitlePopularList from '../components/TitlePopular/TitlePopularList'
 import TitleProjectList from '../components/TitleProjects/TitleProjectList'
+import TitlePopularList from '../components/TitlePopular/TitlePopularList'
 import mangas from '../data'
 
-function ProjectsPage() {
+function SearchPage() {
 	return (
 		<div className='bg-[#16151D] text-white'>
 			<h2 className='text-white text-[15px] mt-[12px] ml-[16px] mb-[12px]'>
-				Список наших проектов
+				Найденные запросы по “...”
 			</h2>
 			<hr className='border-[#312F40]' />
 			<TitleProjectList mangas={mangas} />
@@ -16,4 +16,4 @@ function ProjectsPage() {
 	)
 }
 
-export default ProjectsPage
+export default SearchPage

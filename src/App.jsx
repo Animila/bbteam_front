@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotificationsPage from './pages/NotificationsPage'
 import ProjectsPage from './pages/ProjectsPage'
 import BookmarksPage from './pages/BookmarksPage'
+import SearchPage from './pages/SeacrhPage'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -47,6 +48,7 @@ function App() {
 						<Route path='/notification' element={<NotificationsPage />} />
 						<Route path='/projects' element={<ProjectsPage />} />
 						<Route path='/bookmarks' element={<BookmarksPage />} />
+						<Route path='/search' element={<SearchPage />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
