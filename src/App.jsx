@@ -6,6 +6,7 @@ import { AuthContext } from './context'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotificationsPage from './pages/NotificationsPage'
+import ProjectsPage from './pages/ProjectsPage'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -43,14 +44,13 @@ function App() {
 					<Routes>
 						<Route path='/' element={<HomePage />} />
 						<Route path='/notification' element={<NotificationsPage />} />
+						<Route path='/projects' element={<ProjectsPage />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
 
 				{/* 
-					<Route path='/projects' component={ProjectsPage} />
 					<Route path='/search' component={SearchPage} />
-					<Route path='/bookmarks' component={BookmarksPage} />
 					<Route path='/user' component={UserPage} />
 					<Route path='/manga/:id' component={MangaPage} />
 					<Route path='/chapter/:id' component={ChapterPage} />

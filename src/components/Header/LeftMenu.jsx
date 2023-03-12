@@ -61,7 +61,7 @@ function LeftMenu(props) {
 					/>
 				</svg>
 			),
-			url: '/titles',
+			url: '/projects',
 		},
 
 		{
