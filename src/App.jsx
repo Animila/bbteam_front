@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotificationsPage from './pages/NotificationsPage'
 import ProjectsPage from './pages/ProjectsPage'
+import BookmarksPage from './pages/BookmarksPage'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -45,6 +46,7 @@ function App() {
 						<Route path='/' element={<HomePage />} />
 						<Route path='/notification' element={<NotificationsPage />} />
 						<Route path='/projects' element={<ProjectsPage />} />
+						<Route path='/bookmarks' element={<BookmarksPage />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
