@@ -1,4 +1,4 @@
-import './styles/App.css'
+import './App.css'
 import Header from './components/Header/Header'
 import HomePage from './pages/HomePage'
 import React, { useEffect, useState } from 'react'
