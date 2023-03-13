@@ -1,5 +1,5 @@
 import React from 'react'
-import mangas from '../../assets/data'
+import mangas from '../../../public/data'
 import TitleUpdate from './TitleUpdate'
 
 function TitleUpdateList() {

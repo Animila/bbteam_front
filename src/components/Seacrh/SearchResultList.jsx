@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import mangas_data from '../../assets/data'
+import mangas_data from '../../../public/data'
 import SearchResult from './SearchResult'
 function SearchResultList() {
 	const [dataSearch, setDataSearch] = useState(mangas_data)

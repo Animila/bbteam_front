@@ -9,30 +9,33 @@ function LoginForm(props) {
 
 	const handleSubmit = async e => {
 		e.preventDefault()
-		setSend(true)
+		// setSend(true)
+		localStorage.setItem('access_token', '123')
+		props.handleActiveLogin
+		window.location.reload()
 
-		try {
-			await axios
-				.post('http://bbteam.ru/api/login', {
-					email: email,
-					password: password,
-				})
-				.then(response => {
-					// обработка успешного ответа
-					localStorage.setItem('access_token', response.data.access_token)
-					localStorage.setItem('expires_in', response.data.expires_in)
-					props.handleActiveLogin()
-					setSend(false)
-				})
-				.catch(error => {
-					// обработка ошибки
-					console.log(error)
-					setSend(false)
-				})
-		} catch (error) {
-			setError(error)
-			setSend(false)
-		}
+		// try {
+		// 	await axios
+		// 		.post('http://bbteam.ru/api/login', {
+		// 			email: email,
+		// 			password: password,
+		// 		})
+		// 		.then(response => {
+		// 			// обработка успешного ответа
+		// 			localStorage.setItem('access_token', response.data.access_token)
+		// 			localStorage.setItem('expires_in', response.data.expires_in)
+		// 			props.handleActiveLogin()
+		// 			setSend(false)
+		// 		})
+		// 		.catch(error => {
+		// 			// обработка ошибки
+		// 			console.log(error)
+		// 			setSend(false)
+		// 		})
+		// } catch (error) {
+		// 	setError(error)
+		// 	setSend(false)
+		// }
 	}
 
 	return (
