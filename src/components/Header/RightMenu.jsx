@@ -49,7 +49,7 @@ function RightMenu(props) {
 					<div className='w-full text-white'>
 						<div className='flex pl-6 mb-4'>
 							<img
-								src='assets/avatar.png'
+								src='./src/assets/images/avatar.png'
 								alt=''
 								className='w-[40px] h-[40px] rounded-full'
 							/>
@@ -58,7 +58,7 @@ function RightMenu(props) {
 								<span className='text-[16px]'>shumerman</span>
 								<div className='flex mt-2 items-center justify-between'>
 									<div className='flex'>
-										<img src='assets/premium.svg' alt='' />
+										<img src='./src/assets/images/premium.svg' alt='' />
 										<span className='text-[11px] ml-[5px]'>Премиум</span>
 									</div>
 

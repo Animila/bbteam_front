@@ -1,5 +1,5 @@
 import React from 'react'
-import mangas from '../../data'
+import mangas from '../../assets/data'
 import TitleCard from './TitleCard'
 
 function TitleCardList() {

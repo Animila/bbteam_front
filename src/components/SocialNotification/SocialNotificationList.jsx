@@ -6,7 +6,7 @@ import SocialNotification from './SocialNotification'
 function SocialNotificationList() {
 	const [comments, setComments] = useState([
 		{
-			imgUser: './assets/avatar.png',
+			imgUser: './src/assets/images/avatar.png',
 			nameUser: '@aboba6969',
 			linkUser: '',
 			typeAction: 'like',
@@ -15,7 +15,7 @@ function SocialNotificationList() {
 			time: '4 часа назад',
 		},
 		{
-			imgUser: './assets/avatar.png',
+			imgUser: './src/assets/images/avatar.png',
 			nameUser: '@aboba6969',
 			linkUser: '',
 			typeAction: 'answer',

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
-import mangas from '../../data'
+import mangas from '../../assets/data'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import CarouselSlide from './CarouselSlide'

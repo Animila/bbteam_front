@@ -31,7 +31,7 @@ function Header() {
 				onClick={handleActiveLeftMenu}
 			/>
 			<Link to='/'>
-				<img src='assets/logo.png' className='w-[28px] h-[28px]' />
+				<img src='./src/assets/images/logo.png' className='w-[28px] h-[28px]' />
 			</Link>
 
 			<div className='min-w-[100px]'></div>
@@ -43,7 +43,11 @@ function Header() {
 
 			<div className='relative'>
 				<img
-					src={`${isAuth ? 'assets/avatar.png' : 'assets/default_logo.png'}`}
+					src={`${
+						isAuth
+							? './src/assets/images/avatar.png'
+							: './src/assets/images/default_logo.png'
+					}`}
 					alt=''
 					className='w-[28px] h-[28px] rounded-full'
 					onClick={handleActiveRightMenu}

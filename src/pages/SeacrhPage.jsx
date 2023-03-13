@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleProjectList from '../components/TitleProjects/TitleProjectList'
 import TitlePopularList from '../components/TitlePopular/TitlePopularList'
-import mangas from '../data'
+import mangas from '../assets/data'
 
 function SearchPage() {
 	return (
