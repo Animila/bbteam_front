@@ -24,37 +24,41 @@ function Header() {
 	}
 
 	return (
-		<div className='w-full bg-black h-[60px] flex items-center justify-around'>
+		<div className=' bg-black h-[60px] grid grid-cols-6'>
 			{isSearch && <InputSearch handlerIsSearch={handlerIsSearch} />}
-			<i
-				className='fa-solid fa-bars text-white text-xl'
-				onClick={handleActiveLeftMenu}
-			/>
-			<Link to='/'>
+			<div className='col-1 flex justify-center items-center'>
+				<i
+					className='fa-solid fa-bars text-white text-xl'
+					onClick={handleActiveLeftMenu}
+				/>
+			</div>
+			<Link to='/' className='col-2 flex justify-start items-center'>
 				<img src='./images/logo.png' className='w-[28px] h-[28px]' />
 			</Link>
 
-			<div className='min-w-[100px]'></div>
-
-			<i
-				className='fa-sharp fa-solid fa-magnifying-glass text-[#555555]'
-				onClick={handlerIsSearch}
-			/>
-
-			<div className='relative'>
-				<img
-					src={`${
-						isAuth ? './images/avatar.png' : './images/default_logo.png'
-					}`}
-					alt=''
-					className='w-[28px] h-[28px] rounded-full'
-					onClick={handleActiveRightMenu}
+			<div className='col-start-5 flex justify-end items-center'>
+				<i
+					className='fa-sharp fa-solid fa-magnifying-glass text-[#555555]'
+					onClick={handlerIsSearch}
 				/>
-				<div
-					className={`${
-						isAuth && countNotification != 0 ? '' : 'hidden'
-					} absolute top-0 right-0 w-2 h-2 bg-[#23B1A5] rounded-full`}
-				></div>
+			</div>
+
+			<div className='col-start-6 flex justify-center items-center'>
+				<div className='relative'>
+					<img
+						src={`${
+							isAuth ? './images/avatar.png' : './images/default_logo.png'
+						}`}
+						alt=''
+						className='w-[28px] h-[28px] rounded-full'
+						onClick={handleActiveRightMenu}
+					/>
+					<div
+						className={`${
+							isAuth && countNotification != 0 ? '' : 'hidden'
+						} absolute top-0 right-0 w-2 h-2 bg-[#23B1A5] rounded-full `}
+					></div>
+				</div>
 			</div>
 
 			<RightMenu
