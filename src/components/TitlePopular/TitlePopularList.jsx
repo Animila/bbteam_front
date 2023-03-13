@@ -5,9 +5,9 @@ import mangas from '../../../public/data'
 
 function TitlePopularList() {
 	return (
-		<div className='bg-[#222222] mt-[26px] text-white py-[13px]'>
+		<div className='bg-main_content mt-[26px] text-white py-[13px]'>
 			<h2 className='ml-[17px] font-bold text-[17px]'>Популярно</h2>
-			<hr className='border-[#312F40] mt-[10px]' />
+			<hr className='border-border_block mt-[10px]' />
 			<TitlePopularFilter />
 			{mangas.map(manga => (
 				<TitlePopular key={manga.id} manga={manga} />

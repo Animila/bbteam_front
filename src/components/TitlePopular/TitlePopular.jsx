@@ -4,7 +4,7 @@ function TitlePopular({ manga }) {
 	return (
 		<div>
 			<div className='flex items-center my-[16px] ml-[30px] mr-[5px] justify-around'>
-				<div className='h-[28px] w-[28px] flex justify-center items-center border-[1.2px] rounded text-[#888888] font-bold border-[#888888] mr-[32px]'>
+				<div className='h-[28px] w-[28px] flex justify-center items-center border-[1.2px] rounded text-number_list font-bold border-number_list mr-[32px]'>
 					{manga.id}
 				</div>
 				<img
@@ -14,7 +14,7 @@ function TitlePopular({ manga }) {
 				/>
 				<div>
 					<h4 className='text-[14px] mb-[7px] leading-3'>{manga.title}</h4>
-					<div className='text-[12px] font-medium mb-[7px] leading-3 text-[#888785]'>
+					<div className='text-[12px] font-medium mb-[7px] leading-3 text-color_genre'>
 						Жанры:{' '}
 						{manga.genres.map(genre => (
 							<span key={genre} className='italic text-white'>
@@ -27,7 +27,7 @@ function TitlePopular({ manga }) {
 					</p>
 				</div>
 			</div>
-			<hr className='border-[#383838] border-[1.18px]' />
+			<hr className='border-line_list border-[1.18px]' />
 		</div>
 	)
 }

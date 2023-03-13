@@ -105,7 +105,7 @@ function LeftMenu(props) {
 
 	return (
 		<div
-			className={`fixed z-[2] bg-[#171717] ${
+			className={`fixed z-[2] bg-filterBg ${
 				props.activeLeftMenu ? '' : 'hidden'
 			}`}
 		>
@@ -114,7 +114,7 @@ function LeftMenu(props) {
 				onClick={props.handleActiveLeftMenu}
 			></div>
 			<div
-				className={`fixed left-0 top-0 z-[99] h-full min-w-[70%] bg-[#171717] flex font-bold text-[15px] pt-8 flex-col text-white`}
+				className={`fixed left-0 top-0 z-[99] h-full min-w-[70%] bg-filterBg flex font-bold text-[15px] pt-8 flex-col text-white`}
 				onClick={props.handleActiveLeftMenu}
 			>
 				{menu.map(url => (

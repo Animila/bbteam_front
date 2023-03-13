@@ -38,7 +38,7 @@ function Header() {
 
 			<div className='col-start-5 flex justify-end items-center'>
 				<i
-					className='fa-sharp fa-solid fa-magnifying-glass text-[#555555]'
+					className='fa-sharp fa-solid fa-magnifying-glass text-textSpecial'
 					onClick={handlerIsSearch}
 				/>
 			</div>
@@ -47,7 +47,7 @@ function Header() {
 				<div className='relative'>
 					<img
 						src={`${
-							isAuth ? './images/avatar.png' : './images/default_logo.png'
+							isAuth ? './images/avatar.png' : './images/default_logo.jpg'
 						}`}
 						alt=''
 						className='w-[28px] h-[28px] rounded-full'
@@ -56,7 +56,7 @@ function Header() {
 					<div
 						className={`${
 							isAuth && countNotification != 0 ? '' : 'hidden'
-						} absolute top-0 right-0 w-2 h-2 bg-[#23B1A5] rounded-full `}
+						} absolute top-0 right-0 w-2 h-2 bg-main_action rounded-full `}
 					></div>
 				</div>
 			</div>

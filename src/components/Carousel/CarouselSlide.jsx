@@ -27,7 +27,7 @@ function CarouselSlide({ manga }) {
 			</div>
 			<img
 				src={manga.src}
-				className='border-[1.2px] border-[#FFFFFF]/20 rounded-md min-w-[123px] h-[161px] z-[1]'
+				className='border-[1.2px] border-white/20 rounded-md min-w-[123px] h-[161px] z-[1]'
 			/>
 			<div
 				className='flex flex-col justify-center absolute inset-0 z-0'

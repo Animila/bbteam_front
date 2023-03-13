@@ -21,12 +21,12 @@ function TitleUpdate({ manga }) {
 							>
 								<span
 									className={`text-[14px] ${
-										chapter.future ? 'text-[#555555]' : 'text-[#2EC4B6]'
+										chapter.future ? 'text-textSpecial' : 'text-main_action'
 									}`}
 								>
 									Глава {chapter.number}
 								</span>
-								<span className='text-[11px] text-[#555555]'>
+								<span className='text-[11px] text-textSpecial'>
 									{chapter.time}
 								</span>
 							</a>
@@ -34,7 +34,7 @@ function TitleUpdate({ manga }) {
 					</div>
 				</div>
 			</div>
-			<hr className='border-[#312F40] border-[1px]' />
+			<hr className='border-border_block border-[1px]' />
 		</div>
 	)
 }

@@ -12,7 +12,7 @@ function SearchResult({ manga }) {
 				/>
 				<div>
 					<h4 className='text-[10px] mb-[7px] leading-3'>{manga.title}</h4>
-					<div className='text-[8px] font-medium mb-[7px] leading-3 text-[#888785]'>
+					<div className='text-[8px] font-medium mb-[7px] leading-3 text-color_genre'>
 						Жанры:{' '}
 						{manga.genres.map(genre => (
 							<span key={genre} className='italic text-white'>
@@ -25,7 +25,7 @@ function SearchResult({ manga }) {
 					</p>
 				</div>
 			</div>
-			<hr className='border-[#383838] border-[1.18px]' />
+			<hr className='border-border_block border-[1.18px]' />
 		</Link>
 	)
 }

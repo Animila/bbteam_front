@@ -6,6 +6,7 @@ import SocialNotification from './SocialNotification'
 function SocialNotificationList() {
 	const [comments, setComments] = useState([
 		{
+			id: 0,
 			imgUser: './images/avatar.png',
 			nameUser: '@aboba6969',
 			linkUser: '',
@@ -15,6 +16,7 @@ function SocialNotificationList() {
 			time: '4 часа назад',
 		},
 		{
+			id: 1,
 			imgUser: './images/avatar.png',
 			nameUser: '@aboba6969',
 			linkUser: '',
@@ -35,7 +37,7 @@ function SocialNotificationList() {
 			{comments.length != 0 && (
 				<>
 					{comments.map(comment => (
-						<SocialNotification comment={comment} />
+						<SocialNotification key={comment.id} comment={comment} />
 					))}
 				</>
 			)}

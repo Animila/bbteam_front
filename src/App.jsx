@@ -9,6 +9,7 @@ import NotificationsPage from './pages/NotificationsPage'
 import ProjectsPage from './pages/ProjectsPage'
 import BookmarksPage from './pages/BookmarksPage'
 import SearchPage from './pages/SeacrhPage'
+import AccountPage from './pages/AccountPage'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -49,13 +50,12 @@ function App() {
 						<Route path='/projects' element={<ProjectsPage />} />
 						<Route path='/bookmarks' element={<BookmarksPage />} />
 						<Route path='/search' element={<SearchPage />} />
+						<Route path='/account' element={<AccountPage />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
 
 				{/* 
-					<Route path='/search' component={SearchPage} />
-					<Route path='/user' component={UserPage} />
 					<Route path='/manga/:id' component={MangaPage} />
 					<Route path='/chapter/:id' component={ChapterPage} />
 				</Switch>

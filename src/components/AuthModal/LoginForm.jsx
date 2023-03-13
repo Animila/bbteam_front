@@ -41,9 +41,9 @@ function LoginForm(props) {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className='flex flex-col text-white z-[9] fixed bg-[#0D0D0D] z-99 min-h-[437px] rounded-xl top-[50%] translate-y-[-50%] left-2 right-2'
+			className='flex flex-col text-white z-[9] fixed bg-bgForm z-99 min-h-[437px] rounded-xl top-[50%] translate-y-[-50%] left-2 right-2'
 		>
-			<a className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-[#C3C3C3] bg-[#0061A1] px-[23px] py-[16px] w-[303px] block mx-auto mt-[52px]'>
+			<a className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-placeholderInput bg-[#0061A1] px-[23px] py-[16px] w-[303px] block mx-auto mt-[52px]'>
 				Войти через Вконтакте
 			</a>
 			<h2 className={`text-center text-[25px] mt-[25px]`}>Войти в аккаунт</h2>
@@ -56,7 +56,7 @@ function LoginForm(props) {
 					onChange={e => setEmail(e.target.value)}
 					placeholder='Введите ваше email'
 					required
-					className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-[#C3C3C3] bg-[#151515] px-[23px] py-[16px] w-[303px] mb-[7px]'
+					className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-placeholderInput bg-bgInput px-[23px] py-[16px] w-[303px] mb-[7px]'
 				/>
 				<input
 					type='password'
@@ -65,24 +65,24 @@ function LoginForm(props) {
 					onChange={e => setPassword(e.target.value)}
 					placeholder='Введите ваш пароль'
 					required
-					className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-[#C3C3C3] bg-[#151515] px-[23px] py-[16px] w-[303px]'
+					className='rounded-sm text-white outline-none text-[15px] placeholder:text-[14px] placeholder:text-placeholderInput bg-bgInput px-[23px] py-[16px] w-[303px]'
 				/>
 
 				<button
 					type='submit'
-					className='mt-[27px] bg-[#2EC4B6] font-bold text-black rounded-sm w-fit py-[11px] px-[75px]'
+					className='mt-[27px] bg-main_action font-bold text-black rounded-sm w-fit py-[11px] px-[75px]'
 					disabled={send}
 				>
 					Войти
 				</button>
 				<a
-					className='text-[16px] text-[#4F4F4F] mt-[24px]'
+					className='text-[16px] text-textForm mt-[24px]'
 					onClick={props.switchToForgotPassword}
 				>
 					Забыли пароль?
 				</a>
 				<a
-					className='text-[16px] text-[#4F4F4F] mt-[20px] mb-[22px]'
+					className='text-[16px] text-textForm mt-[20px] mb-[22px]'
 					onClick={props.switchToRegister}
 				>
 					Зарегистрироваться

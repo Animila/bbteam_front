@@ -48,7 +48,7 @@ function InputSearch({ handlerIsSearch }) {
 				{onSearch && <SearchResult />}
 			</div>
 			<Link
-				className='text-[#2EC4B6] text-[14px] z-[4] ml-[8px]'
+				className='text-main_action text-[14px] z-[4] ml-[8px]'
 				to='/search'
 				onClick={handlerIsSearch}
 			>

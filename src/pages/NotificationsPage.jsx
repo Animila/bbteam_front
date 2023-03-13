@@ -35,14 +35,14 @@ function NotificationsPage() {
 	return (
 		<div className='text-white mt-4'>
 			<h2 className='text-[23px] font-bold ml-[20px]'>Уведомления</h2>
-			<hr className='border-[#FFFFFF] opacity-[.15]' />
-			<div className='flex justify-around text-[#D9D9D9] items-center h-[49px]'>
+			<hr className='border-white opacity-[.15]' />
+			<div className='flex justify-around text-textFilterTitle items-center h-[49px]'>
 				{subMenu.map(obj => (
 					<div
 						key={obj.title}
 						className={`${
 							obj.active
-								? 'after:block after:border-[#2EC4B6] after:border-[1px] after:mt-[6px]'
+								? 'after:block after:border-main_action after:border-[1px] after:mt-[6px]'
 								: ''
 						}
 						 h-6 mb-[9px] relative
@@ -53,7 +53,7 @@ function NotificationsPage() {
 						<span
 							className={`${
 								obj.active
-									? 'bg-[#2EC4B6] text-black text-[8px]'
+									? 'bg-main_action text-black text-[8px]'
 									: 'text-transparent'
 							} absolute top-[50%] translate-y-[-50%] right-[-23px] w-[21px] h-[21px] rounded-full flex justify-center items-center `}
 						>
@@ -62,9 +62,9 @@ function NotificationsPage() {
 					</div>
 				))}
 			</div>
-			<hr className='border-[#FFFFFF/15] opacity-[.15]' />
+			<hr className='border-white opacity-[.15]' />
 			{subMenu[0].active && <TitlesNotificationList />}
-			{subMenu[1].active && <SocialNotificationList/>}
+			{subMenu[1].active && <SocialNotificationList />}
 		</div>
 	)
 }

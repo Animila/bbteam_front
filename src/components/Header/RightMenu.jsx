@@ -19,7 +19,7 @@ function RightMenu(props) {
 
 	return (
 		<div
-			className={`fixed z-[2] bg-[#171717] ${
+			className={`fixed z-[2] bg-filterBg ${
 				props.activeRightMenu ? '' : 'hidden'
 			}`}
 		>
@@ -28,13 +28,13 @@ function RightMenu(props) {
 				onClick={props.handleActiveRightMenu}
 			></div>
 			<div
-				className={`fixed right-0 top-0 z-[99] h-full min-w-[70%] bg-[#171717] flex justify-center items-start pt-8`}
+				className={`fixed right-0 top-0 z-[99] h-full min-w-[70%] bg-filterBg flex justify-center items-start pt-8`}
 			>
 				{!isAuth && (
 					<div>
 						<button
 							type='submit'
-							className=' bg-[#2EC4B6] font-bold text-black rounded-sm w-fit py-[11px] px-[26px]'
+							className=' bg-main_action font-bold text-black rounded-sm w-fit py-[11px] px-[26px]'
 							onClick={handlerActiveAuthModal}
 						>
 							Войти в аккаунт
@@ -62,7 +62,7 @@ function RightMenu(props) {
 										<span className='text-[11px] ml-[5px]'>Премиум</span>
 									</div>
 
-									<span className='text-[#2EC4B6] text-[11px] float-right pr-[18px]'>
+									<span className='text-main_action text-[11px] float-right pr-[18px]'>
 										Активен
 									</span>
 								</div>
@@ -77,11 +77,15 @@ function RightMenu(props) {
 								onClick={props.handleActiveRightMenu}
 							>
 								Уведомления{' '}
-								<div className='bg-[#2EC4B6] rounded-full w-[25px] h-[25px] flex items-center justify-center text-[9px] text-black'>
+								<div className='bg-main_action rounded-full w-[25px] h-[25px] flex items-center justify-center text-[9px] text-black'>
 									{countNotification}
 								</div>
 							</Link>
-							<a className='flex justify-between mb-[30px]'>
+							<Link
+								to='/account'
+								className='flex justify-between mb-[30px]'
+								onClick={props.handleActiveRightMenu}
+							>
 								Настройки
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
@@ -102,7 +106,7 @@ function RightMenu(props) {
 										d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'
 									/>
 								</svg>
-							</a>
+							</Link>
 							<a className='flex justify-between' onClick={handleLogout}>
 								Выйти{' '}
 								<svg

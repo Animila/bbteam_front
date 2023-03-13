@@ -6,6 +6,7 @@ function TitlesNotificationList() {
 	// const { setCountTitleNotification } = useContext(AuthContext)
 	const [mangas, setMangas] = useState([
 		{
+			id: 0,
 			title: 'Тихоокеанский рубеж',
 			lastChapter: 40,
 			time: '4 часа назад',
@@ -14,6 +15,7 @@ function TitlesNotificationList() {
 			img: './images/manga.png',
 		},
 		{
+			id: 1,
 			title: 'Тихоокеанский рубеж',
 			lastChapter: 40,
 			time: '4 часа назад',
@@ -22,6 +24,7 @@ function TitlesNotificationList() {
 			img: './images/manga_1.png',
 		},
 		{
+			id: 2,
 			title: 'Тихоокеанский рубеж',
 			lastChapter: 40,
 			time: '4 часа назад',
@@ -30,6 +33,7 @@ function TitlesNotificationList() {
 			img: './images/manga.png',
 		},
 		{
+			id: 3,
 			title: 'Тихоокеанский рубеж',
 			lastChapter: 40,
 			time: '4 часа назад',
@@ -49,7 +53,7 @@ function TitlesNotificationList() {
 			{mangas.length != 0 && (
 				<>
 					{mangas.map(manga => (
-						<TitlesNotification manga={manga} />
+						<TitlesNotification key={manga.id} manga={manga} />
 					))}
 				</>
 			)}

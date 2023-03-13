@@ -5,11 +5,11 @@ import mangas from '../../public/data'
 
 function SearchPage() {
 	return (
-		<div className='bg-[#16151D] text-white'>
+		<div className='bg-main_bg text-white'>
 			<h2 className='text-white text-[15px] mt-[12px] ml-[16px] mb-[12px]'>
 				Найденные запросы по “...”
 			</h2>
-			<hr className='border-[#312F40]' />
+			<hr className='border-border_block' />
 			<TitleProjectList mangas={mangas} />
 			<TitlePopularList />
 		</div>

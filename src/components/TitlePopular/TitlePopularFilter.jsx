@@ -35,13 +35,13 @@ function TitlePopularFilter() {
 	}
 
 	return (
-		<div className='block bg-[#333333] h-10 mx-3 rounded-md my-auto'>
+		<div className='block bg-filter h-10 mx-3 rounded-md my-auto'>
 			<div className='flex items-center justify-around py-[7px] w-full'>
 				{data.map(item => (
 					<div
 						key={item.id}
 						className={`${
-							item.active ? 'bg-[#2EC4B6] text-black' : ''
+							item.active ? 'bg-main_action text-black' : ''
 						} w-[90px] h-[26px] text-[14px]   flex items-center justify-around rounded-md font-bold`}
 						onClick={() => selectItem(item.id)}
 					>
