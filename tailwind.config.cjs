@@ -24,6 +24,8 @@ module.exports = {
 			placeholderInput: '#C3C3C3',
 			bgForm: '#0D0D0D',
 			textForm: '#4F4F4F',
+
+			settingInput: '#181818',
 		},
 	},
 	plugins: [],
