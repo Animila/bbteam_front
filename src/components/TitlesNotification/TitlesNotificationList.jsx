@@ -11,7 +11,7 @@ function TitlesNotificationList() {
 			time: '4 часа назад',
 			free: true,
 			url: '',
-			img: './src/assets/images/manga.png',
+			img: './images/manga.png',
 		},
 		{
 			title: 'Тихоокеанский рубеж',
@@ -19,7 +19,7 @@ function TitlesNotificationList() {
 			time: '4 часа назад',
 			free: false,
 			url: '',
-			img: './src/assets/images/manga_1.png',
+			img: './images/manga_1.png',
 		},
 		{
 			title: 'Тихоокеанский рубеж',
@@ -27,7 +27,7 @@ function TitlesNotificationList() {
 			time: '4 часа назад',
 			free: true,
 			url: '',
-			img: './src/assets/images/manga.png',
+			img: './images/manga.png',
 		},
 		{
 			title: 'Тихоокеанский рубеж',
@@ -35,7 +35,7 @@ function TitlesNotificationList() {
 			time: '4 часа назад',
 			free: false,
 			url: '',
-			img: './src/assets/images/manga_1.png',
+			img: './images/manga_1.png',
 		},
 	])
 
