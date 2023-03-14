@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-function AccountSetting({ user }) {
+function AccountSetting(props) {
 	const [onName, setOnNAme] = useState(true)
-	const [name, setName] = useState(user.name)
+	const [name, setName] = useState(props.user.name)
 	const [onPassword, setOnPassword] = useState(true)
-	const [password, setPassword] = useState(user.password)
+	const [password, setPassword] = useState(props.user.password)
 	const [onEmail, setOnEmail] = useState(true)
-	const [email, setEmail] = useState(user.mail)
+	const [email, setEmail] = useState(props.user.mail)
 
 	return (
 		<form action='' className='mx-6 pt-[35px]'>

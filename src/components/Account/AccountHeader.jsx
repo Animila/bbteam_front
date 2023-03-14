@@ -14,10 +14,12 @@ function AccountHeader({ user }) {
 	return (
 		<div className='min-h-[190px] flex'>
 			<div
-				className='opacity-25 w-full absolute h-[190px]'
+				className='opacity-25 w-full absolute h-[190px] bg-no-repeat bg-cover'
 				style={{
 					backgroundImage: ` ${
-						user.logo == 'none' ? 'url("./images/default_account_bg.jpg")' : ''
+						user.logo == 'none'
+							? 'url("./images/default_account_bg.jpg")'
+							: `url("${user.logo}")`
 					}`,
 				}}
 			></div>
@@ -25,7 +27,9 @@ function AccountHeader({ user }) {
 				<div className='h-full flex flex-col justify-center'>
 					<div className=' flex justify-center items-center'>
 						<img
-							src={`${user.logo == 'none' ? './images/default_logo.jpg' : ''}`}
+							src={`${
+								user.logo == 'none' ? './images/default_logo.jpg' : user.logo
+							}`}
 							alt=''
 							className='w-[83px] h-[83px] rounded-full'
 						/>

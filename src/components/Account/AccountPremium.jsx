@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 
-function AccountPremium({ user }) {
-	const [activeSocial, setActiveSocial] = useState(user.id_social_account)
-	const [activePremium, setActivePremium] = useState(user.premium_status)
+function AccountPremium(props) {
+	const [activeSocial, setActiveSocial] = useState(props.user.id_social_account)
+	const [activePremium, setActivePremium] = useState(props.user.premium_status)
+
+	const handlerSocial = () => {
+		setActiveSocial(!activeSocial)
+	}
+
+	const handlerPremium = () => {
+		setActivePremium(!activePremium)
+	}
+
 	return (
 		<div>
 			<form
@@ -23,11 +32,24 @@ function AccountPremium({ user }) {
 					— После оформления вернитесь на этот сайт и нажмите кнопку
 					Активировать.
 				</p>
-				<div className='bg-[#0061A1] flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[29px]'>
-					Привязать свой VK
+				<div
+					onClick={handlerSocial}
+					className={`
+					${
+						activeSocial ? 'bg-[#1D1D1D] text-[#CCCCCC]' : 'bg-[#0061A1]'
+					}   flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[29px]`}
+				>
+					{activeSocial ? 'Отвязать страницу' : 'Привязать свой VK'}
 				</div>
-				<div className='bg-main_action text-black flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[13px]'>
-					Активировать
+				<div
+					onClick={handlerPremium}
+					className={`${
+						activePremium
+							? 'bg-[#1D1D1D] text-[#CCCCCC]'
+							: 'bg-main_action text-black'
+					} flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[13px]`}
+				>
+					{activePremium ? 'Активировано' : 'Активировать'}
 				</div>
 			</form>
 
@@ -63,9 +85,17 @@ function AccountPremium({ user }) {
 				<input
 					className='bg-[#1D1D1D] text-center w-[221px] h-[42px] rounded-[2px] mt-[29px] outline-none placeholder:text-[#3E3E3E] placeholder:text-[15px]'
 					placeholder='Проверочный код'
+					disabled={activePremium}
 				/>
-				<div className='bg-main_action text-black flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[13px]'>
-					Активировать
+				<div
+					onClick={handlerPremium}
+					className={`${
+						activePremium
+							? 'bg-[#1D1D1D] text-[#CCCCCC]'
+							: 'bg-main_action text-black'
+					} flex justify-center items-center w-[221px] h-[42px] rounded-[2px] mt-[13px]`}
+				>
+					{activePremium ? 'Активировано' : 'Активировать'}
 				</div>
 			</form>
 		</div>
