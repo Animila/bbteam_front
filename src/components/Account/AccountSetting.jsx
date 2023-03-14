@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AccountSetting(props) {
+const AccountSetting = (props) => {
 	const [onName, setOnNAme] = useState(true)
 	const [name, setName] = useState(props.user.name)
 	const [onPassword, setOnPassword] = useState(true)

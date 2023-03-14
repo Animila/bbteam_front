@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AccountPremium(props) {
+const AccountPremium = (props) => {
 	const [activeSocial, setActiveSocial] = useState(props.user.id_social_account)
 	const [activePremium, setActivePremium] = useState(props.user.premium_status)
 

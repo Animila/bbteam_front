@@ -5,7 +5,7 @@ import AccountPremium from '../components/Account/AccountPremium'
 import AccountSelect from '../components/Account/AccountSelect'
 import AccountSetting from '../components/Account/AccountSetting'
 
-function AccountPage() {
+const AccountPage = () => {
 	const user = {
 		id: 1,
 		logo: './images/avatar.png',

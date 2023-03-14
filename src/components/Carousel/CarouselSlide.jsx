@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link, useHistory } from 'react-router-dom'
 
-function CarouselSlide({ manga }) {
+const CarouselSlide = ({ manga }) => {
+	const router = useHistory()
 	return (
-		<a
-			href={manga.url}
+		<div
+			onClick={() => {
+				router.push(`/titles/${manga.id}`)
+				console.log(`/titles/${manga.id}`)
+			}}
 			className={`w-full h-[200px] flex items-center px-2 bg-no-repeat bg-cover relative`}
 			style={{
 				backgroundImage: `url("${manga.src}")`,
@@ -35,7 +40,7 @@ function CarouselSlide({ manga }) {
 					backdropFilter: 'blur(20px)',
 				}}
 			></div>
-		</a>
+		</div>
 	)
 }
 

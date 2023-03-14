@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import TitlesNotification from './TitlesNotification'
 import { AuthContext } from '../../context'
 
-function TitlesNotificationList() {
+const TitlesNotificationList = () => {
 	// const { setCountTitleNotification } = useContext(AuthContext)
 	const [mangas, setMangas] = useState([
 		{

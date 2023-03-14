@@ -3,7 +3,7 @@ import TitlePopularList from '../components/TitlePopular/TitlePopularList'
 import TitleProjectList from '../components/TitleProjects/TitleProjectList'
 import mangas from '../../public/data'
 
-function ProjectsPage() {
+const ProjectsPage = () => {
 	return (
 		<div className='bg-main_bg text-white'>
 			<h2 className='text-white text-[15px] mt-[12px] ml-[16px] mb-[12px]'>

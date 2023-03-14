@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AccountSuccess() {
+const AccountSuccess = () => {
 	return (
 		<div>
 			<h3 className='text-center text-[27px] text-[#80FF00]'>УСПЕШНО!</h3>

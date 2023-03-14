@@ -1,5 +1,5 @@
 import React from 'react'
-function TitleProject({ manga }) {
+const TitleProject = ({ manga }) => {
 	return (
 		<a
 			href={manga.url}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import mangas_data from '../../../public/data'
 import SearchResult from './SearchResult'
-function SearchResultList() {
+
+const SearchResultList = () => {
 	const [dataSearch, setDataSearch] = useState(mangas_data)
 
 	return (

@@ -3,7 +3,7 @@ import RegisterForm from './RegisterForm'
 import LoginForm from './LoginForm'
 import ForgotPasswordForm from './ForgotPasswordForm'
 
-function AuthModal(props) {
+const AuthModal = (props) => {
 	const [formType, setFormType] = useState('login')
 
 	const switchToLogin = () => {

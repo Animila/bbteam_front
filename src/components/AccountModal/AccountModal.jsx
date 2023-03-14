@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import AccountError from './AccountError'
 import AccountSuccess from './AccountSuccecs'
 
-function AccountModal({ handlerModal, success }) {
+const AccountModal = ({ handlerModal, success }) => {
 	return (
 		<div className='fixed z-[99]'>
 			<div

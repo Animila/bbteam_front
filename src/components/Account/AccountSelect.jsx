@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AccountSelect({ subMenu, setSubMenu }) {
+const AccountSelect = ({ subMenu, setSubMenu }) => {
 	function handlerMenu(title) {
 		const select = subMenu.map(item => {
 			if (item.title == title) {

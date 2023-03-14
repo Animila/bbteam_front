@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AccountError() {
+const AccountError = () => {
 	return (
 		<div>
 			<h3 className='text-center text-[27px] text-[#FF5656]'>ОШИБКА!</h3>

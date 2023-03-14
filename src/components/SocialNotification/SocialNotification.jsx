@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function SocialNotification({ comment }) {
+const SocialNotification = ({ comment }) => {
 	return (
 		<Link className='bg-filterBg border-[1px] border-line_list min-h-[104px] rounded-[5px] mx-[5px] mb-[4px] flex flex-col justify-center'>
 			<div className='flex items-center justify-around'>

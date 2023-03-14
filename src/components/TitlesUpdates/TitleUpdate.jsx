@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TitleUpdate({ manga }) {
+const TitleUpdate = ({ manga }) => {
 	return (
 		<div className='flex flex-col'>
 			<div className='mt-[13px] mb-[20px] flex pl-5 w-full pr-[21px]'>

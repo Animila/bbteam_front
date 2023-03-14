@@ -2,7 +2,7 @@ import React from 'react'
 import mangas from '../../../public/data'
 import TitleCard from './TitleCard'
 
-function TitleCardList() {
+const TitleCardList = () => {
 	return (
 		<div className='text-white w-full pt-[13px] bg-main_content'>
 			<h2 className='text-left px-[17px]'>Популярно сегодня</h2>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TitlePopular({ manga }) {
+const TitlePopular = ({ manga }) => {
 	return (
 		<div>
 			<div className='flex items-center my-[16px] ml-[30px] mr-[5px] justify-around'>

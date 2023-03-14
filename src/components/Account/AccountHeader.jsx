@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context'
 
-function AccountHeader({ user }) {
+const AccountHeader = ({ user }) => {
 	const { setIsAuth, isAuth, countNotification } = useContext(AuthContext)
 
 	const handleLogout = () => {

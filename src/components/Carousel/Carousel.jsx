@@ -7,7 +7,7 @@ import 'swiper/css/pagination'
 import CarouselSlide from './CarouselSlide'
 import './Carousel.css'
 
-function Carousel() {
+const Carousel = () => {
 	return (
 		<div className='bg-white w-full'>
 			<Swiper

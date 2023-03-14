@@ -1,5 +1,5 @@
 import React from 'react'
-function TitleBookmarks({ manga, stateDelete }) {
+const TitleBookmarks = ({ manga, stateDelete }) => {
 	return (
 		<a
 			href={manga.url}

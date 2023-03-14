@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SearchResult from './SearchResultList'
 
-function InputSearch({ handlerIsSearch }) {
+const InputSearch = ({ handlerIsSearch }) => {
 	const [searchText, setSearchText] = useState('')
 	const [onSearch, setOnSearch] = useState(false)
 

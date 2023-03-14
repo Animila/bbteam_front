@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context'
 import AuthModal from '../AuthModal/AuthModal'
 
-function RightMenu(props) {
+const RightMenu = (props) => {
 	const { setIsAuth, isAuth, countNotification } = useContext(AuthContext)
 	const [activeAuthModal, setActiveAuthModal] = useState(false)
 

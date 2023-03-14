@@ -1,9 +1,7 @@
-import React, { useContext, useState } from 'react'
-import TitlesNotification from './SocialNotification'
-import { AuthContext } from '../../context'
+import React, { useState } from 'react'
 import SocialNotification from './SocialNotification'
 
-function SocialNotificationList() {
+const SocialNotificationList = () => {
 	const [comments, setComments] = useState([
 		{
 			id: 0,

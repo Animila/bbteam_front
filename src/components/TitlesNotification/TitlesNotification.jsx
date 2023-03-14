@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function TitlesNotification({ manga }) {
+const TitlesNotification = ({ manga }) => {
 	return (
 		<Link className='bg-filterBg border-[1px] border-line_list min-h-[104px] rounded-[5px] mx-[5px] mb-[4px] flex items-center justify-around'>
 			<img src={manga.img} alt='' className='w-[57px] h-[87px] rounded-[5px]' />

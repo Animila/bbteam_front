@@ -3,7 +3,7 @@ import SocialNotificationList from '../components/SocialNotification/SocialNotif
 import TitlesNotificationList from '../components/TitlesNotification/TitlesNotificationList'
 import { AuthContext } from '../context'
 
-function NotificationsPage() {
+const NotificationsPage = () => {
 	const { countTitleNotification, countSocialNotification } =
 		useContext(AuthContext)
 	const [subMenu, setSubMenu] = useState([

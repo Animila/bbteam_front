@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TitleBookmarksList from '../components/TitleBookmarks/TitleBookmarksList'
 import TitlePopularList from '../components/TitlePopular/TitlePopularList'
 
-function BookmarksPage() {
+const BookmarksPage = () => {
 	const [inDelete, setInDelete] = useState(false)
 
 	const handlerDelete = () => {

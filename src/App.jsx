@@ -1,15 +1,10 @@
 import './App.css'
 import Header from './components/Header/Header'
-import HomePage from './pages/HomePage'
 import React, { useEffect, useState } from 'react'
 import { AuthContext } from './context'
 import Footer from './components/Footer'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NotificationsPage from './pages/NotificationsPage'
-import ProjectsPage from './pages/ProjectsPage'
-import BookmarksPage from './pages/BookmarksPage'
-import SearchPage from './pages/SeacrhPage'
-import AccountPage from './pages/AccountPage'
+import AppRouter from './AppRouter'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 	const [isAuth, setIsAuth] = useState(false)
@@ -44,19 +39,12 @@ function App() {
 			>
 				<BrowserRouter>
 					<Header />
-					<Routes>
-						<Route path='/' element={<HomePage />} />
-						<Route path='/notification' element={<NotificationsPage />} />
-						<Route path='/projects' element={<ProjectsPage />} />
-						<Route path='/bookmarks' element={<BookmarksPage />} />
-						<Route path='/search' element={<SearchPage />} />
-						<Route path='/account' element={<AccountPage />} />
-					</Routes>
+					<AppRouter />
 					<Footer />
 				</BrowserRouter>
 
 				{/* 
-					<Route path='/manga/:id' component={MangaPage} />
+					
 					<Route path='/chapter/:id' component={ChapterPage} />
 				</Switch>
 			</Router> */}

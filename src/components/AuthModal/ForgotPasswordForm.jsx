@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-function ForgotPasswordForm(props) {
+const ForgotPasswordForm = (props) => {
 	const [email, setEmail] = useState('')
 	const [error, setError] = useState('')
 	const [send, setSend] = useState(false)

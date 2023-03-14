@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function SearchResult({ manga }) {
+const SearchResult = ({ manga }) => {
 	return (
 		<Link>
 			<div className='flex items-center my-[5px] justify-around mx-[5px]'>

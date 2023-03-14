@@ -5,7 +5,7 @@ import InputSearch from '../Seacrh/InputSearch'
 import LeftMenu from './LeftMenu'
 import RightMenu from './RightMenu'
 
-function Header() {
+const Header = () => {
 	const [activeRightMenu, setActiveRightMenu] = useState(false)
 	const [activeLeftMenu, setActiveLeftMenu] = useState(false)
 	const [isSearch, setIsSearch] = useState(false)

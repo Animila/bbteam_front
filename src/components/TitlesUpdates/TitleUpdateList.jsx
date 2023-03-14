@@ -2,7 +2,7 @@ import React from 'react'
 import mangas from '../../../public/data'
 import TitleUpdate from './TitleUpdate'
 
-function TitleUpdateList() {
+const TitleUpdateList = () => {
 	return (
 		<div className='bg-main_content pb-5'>
 			<div className='text-white text-[15px] flex justify-between items-center pl-4 pr-[14px] py-2 mt-[5px]'>

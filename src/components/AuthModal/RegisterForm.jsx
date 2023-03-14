@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-function RegisterForm(props) {
+const RegisterForm = props => {
 	const [nickname, setNickname] = useState('')
 	const [name, setName] = useState('')
 	const [gender, setGender] = useState()

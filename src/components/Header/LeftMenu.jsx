@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context'
 
-function LeftMenu(props) {
+const LeftMenu = (props) => {
 	const menu = [
 		{
 			title: 'Главная',

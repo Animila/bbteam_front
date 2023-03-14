@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+const Footer = () => {
 	return (
 		<div className='flex flex-col w-full bg-main_action min-h-[68px] text-[10px] text-black pl-6 pt-4 pb-[14px]'>
 			<a href='#' className='mb-1'>

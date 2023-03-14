@@ -2,7 +2,7 @@ import React from 'react'
 import mangas from '../../../public/data'
 import TitleProject from './TitleBookmarks'
 
-function TitleBookmarksList(props) {
+const TitleBookmarksList = (props) => {
 	return (
 		<div className='bg-main_content pb-[20px] mb-[26px]'>
 			<div className='grid grid-cols-2 px-[10px] gap-2 mt-5 self-center'>

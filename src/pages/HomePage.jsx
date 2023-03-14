@@ -4,7 +4,7 @@ import TitleCardList from '../components/TitleCard/TitleCardList'
 import TitlePopularList from '../components/TitlePopular/TitlePopularList'
 import TitleUpdateList from '../components/TitlesUpdates/TitleUpdateList'
 
-function HomePage() {
+const HomePage = () => {
 	return (
 		<>
 			<Carousel />
