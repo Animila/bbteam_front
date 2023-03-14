@@ -38,7 +38,7 @@ function AccountHeader({ user }) {
 						</h2>
 					</div>
 					<Link
-						className='text-white flex justify-end items-end self-end mr-[20px] z-[4]'
+						className='text-white flex justify-end items-end self-end mr-[20px] z-[0]'
 						onClick={handleLogout}
 						to='/'
 					>
