@@ -6,13 +6,13 @@ const TitleUpdate = ({ manga }) => {
 			<div className='mt-[13px] mb-[20px] flex pl-5 w-full pr-[21px]'>
 				<a href='#'>
 					<img
-						src={manga.src}
+						src={manga.bookJacket}
 						alt=''
 						className='min-w-[100px] h-[142px] rounded'
 					/>
 				</a>
 				<div className='ml-3 w-full'>
-					<h4 className='text-[16px] text-white'>{manga.title}</h4>
+					<h4 className='text-[16px] text-white'>{manga.titleRu}</h4>
 					<div className='flex flex-col mt-[18px]'>
 						{manga.chapters.slice(0).map(chapter => (
 							<a

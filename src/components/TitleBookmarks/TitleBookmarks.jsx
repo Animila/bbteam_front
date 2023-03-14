@@ -11,9 +11,9 @@ const TitleBookmarks = ({ manga, stateDelete }) => {
 			}}
 		>
 			<div className='relative'>
-				<img src={manga.src} className='rounded-lg col-1 h-[240px] ' />
+				<img src={manga.bookJacket} className='rounded-lg col-1 h-[240px] ' />
 				<div className='absolute w-[66px] h-[24px] text-[12px] bg-spanManga flex justify-center items-center text-main_action rounded-sm left-[7px] bottom-[7px]'>
-					Манга
+					{manga.type}
 				</div>
 				<div
 					className={`${

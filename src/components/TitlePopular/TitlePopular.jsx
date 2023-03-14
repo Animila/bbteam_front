@@ -8,12 +8,12 @@ const TitlePopular = ({ manga }) => {
 					{manga.id}
 				</div>
 				<img
-					src={manga.src}
+					src={manga.bookJacket}
 					alt=''
 					className='min-w-[65px] h-[88px] rounded mr-[10px]'
 				/>
 				<div>
-					<h4 className='text-[14px] mb-[7px] leading-3'>{manga.title}</h4>
+					<h4 className='text-[14px] mb-[7px] leading-3'>{manga.titleRu}</h4>
 					<div className='text-[12px] font-medium mb-[7px] leading-3 text-color_genre'>
 						Жанры:{' '}
 						{manga.genres.map(genre => (

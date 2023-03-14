@@ -6,7 +6,7 @@ const SearchResult = ({ manga }) => {
 		<Link>
 			<div className='flex items-center my-[5px] justify-around mx-[5px]'>
 				<img
-					src={manga.src}
+					src={manga.bookJacket}
 					alt=''
 					className='min-w-[65px] h-[88px] rounded mr-[10px]'
 				/>

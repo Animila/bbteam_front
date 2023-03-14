@@ -1,8 +1,13 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 const TitleCard = ({ manga }) => {
+	const router = useHistory()
 	return (
 		<a
-			href={manga.url}
+			onClick={() => {
+				router.push(`/titles/${manga.id}`)
+				console.log(`/titles/${manga.id}`)
+			}}
 			key={manga.id}
 			className='relative flex flex-col justify-center items-center'
 			style={{
@@ -11,9 +16,9 @@ const TitleCard = ({ manga }) => {
 			}}
 		>
 			<div className='relative'>
-				<img src={manga.src} className='rounded-lg col-1 h-[240px] ' />
+				<img src={manga.bookJacket} className='rounded-lg col-1 h-[240px] ' />
 				<div className='absolute w-[66px] h-[24px] text-[12px] bg-spanManga flex justify-center items-center text-main_action rounded-sm left-[7px] bottom-[7px]'>
-					Манга
+					{manga.type}
 				</div>
 			</div>
 			<div className='w-full'>
