@@ -12,7 +12,7 @@ import ErrorPage from './pages/ErrorPage'
 const AppRouter = () => {
 	return (
 		<Switch>
-			<Route path='/home'>
+			<Route exact path='/'>
 				<HomePage />
 			</Route>
 			<Route path='/notification'>
