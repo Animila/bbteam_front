@@ -9,6 +9,8 @@ function AccountPremium(props) {
 	}
 
 	const handlerPremium = () => {
+		props.handlerModal()
+		props.setSuccess(!activePremium)
 		setActivePremium(!activePremium)
 	}
 
