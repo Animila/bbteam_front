@@ -3,6 +3,12 @@ module.exports = {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {},
+		fontFamily: {
+			sans: ['Gotham Pro', 'sans-serif'],
+			'sans-bold': ['Gotham Pro Bold', 'sans-serif'],
+			sansmedium: ['Gotham Pro Medium', 'sans-serif'],
+			'sans-black': ['Gotham Pro Black', 'sans-serif'],
+		},
 		colors: {
 			main_action: '#2EC4B6',
 			number_list: '#888888',

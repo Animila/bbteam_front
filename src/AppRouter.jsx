@@ -8,6 +8,7 @@ import AccountPage from './pages/AccountPage'
 import TitlePage from './pages/TitlePage'
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
+import ChapterPage from './pages/ChapterPage'
 
 const AppRouter = () => {
 	return (
@@ -30,8 +31,11 @@ const AppRouter = () => {
 			<Route path='/account'>
 				<AccountPage />
 			</Route>
-			<Route path='/titles/:id'>
+			<Route exact path='/titles/:id'>
 				<TitlePage />
+			</Route>
+			<Route exact path='/titles/:id/chapter/:chapter_id'>
+				<ChapterPage />
 			</Route>
 			<Route path='/error'>
 				<ErrorPage />

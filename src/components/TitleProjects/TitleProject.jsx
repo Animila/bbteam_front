@@ -23,8 +23,8 @@ const TitleProject = ({ manga }) => {
 				<div className='text-[13px] text-color_genre font-medium'>
 					Жанры:{' '}
 					{manga.genres.map(genre => (
-						<span key={genre} className='italic text-white'>
-							{genre}{' '}
+						<span key={genre.id} className='italic text-white'>
+							{genre.title}{' '}
 						</span>
 					))}
 				</div>

@@ -15,14 +15,14 @@ const CarouselSlide = ({ manga }) => {
 			}}
 		>
 			<div className='flex flex-col justify-center z-[1] text-white mr-[7px]'>
-				<h2 className='text-[22px] w-full leading-6 font-bold mb-[10px]'>
+				<h2 className='text-[22px] w-full leading-6 font-sans-black mb-[10px]'>
 					{manga.titleRu}
 				</h2>
-				<div className='text-[13px] font-medium mb-[7px]'>
-					Жанры:{' '}
+				<div className='text-[13px] mb-[7px]'>
+					<span className='font-sansmedium'>Жанры: </span>
 					{manga.genres.map(genre => (
-						<span key={genre} className='italic'>
-							{genre}{' '}
+						<span key={genre.id} className='font-sans'>
+							{genre.title}{' '}
 						</span>
 					))}
 				</div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import mangas_data from '../../../public/data'
+import mangas_data from '../../../data'
 import SearchResult from './SearchResult'
 
 const SearchResultList = () => {

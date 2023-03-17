@@ -17,8 +17,8 @@ const TitlePopular = ({ manga }) => {
 					<div className='text-[12px] font-medium mb-[7px] leading-3 text-color_genre'>
 						Жанры:{' '}
 						{manga.genres.map(genre => (
-							<span key={genre} className='italic text-white'>
-								{genre}{' '}
+							<span key={genre.id} className='italic text-white'>
+								{genre.title}{' '}
 							</span>
 						))}
 					</div>

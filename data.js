@@ -6,13 +6,26 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манга',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga.png',
 		chapters: [
+			{
+				id: 0,
+				free: true,
+				number: 37,
+				data: '10 Февраля 2023',
+			},
 			{
 				id: 1,
 				free: true,
@@ -43,12 +56,19 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манга',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga_1.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga_1.png',
 		chapters: [
 			{
 				id: 1,
@@ -80,12 +100,19 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манга',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga.png',
 		chapters: [
 			{
 				id: 1,
@@ -117,12 +144,19 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манга',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga_1.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga_1.png',
 		chapters: [
 			{
 				id: 1,
@@ -154,12 +188,19 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манхва',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga.png',
 		chapters: [
 			{
 				id: 1,
@@ -191,12 +232,19 @@ export default [
 		titleKorean: '헌터 인또 다른 세계 ',
 		views: 200,
 		bookmarks: 1200,
+		year: 2002,
 		description:
 			'В современном Хоккайдо появился бурый медведь возле начальной школы, поэтому член местной ассоциации охотников отправляется его устранить. Однако он был убит медведем и просыпается...',
 		type: 'манга',
 		status: 'продолжается',
-		genres: ['Комедия', 'Драма', 'Путин'],
-		bookJacket: './images/manga_1.png',
+		genres: [
+			{ title: 'Комедия', id: 0 },
+			{ title: 'Драма', id: 1 },
+			{ title: 'Путин', id: 2 },
+			{ title: 'Драма', id: 3 },
+			{ title: 'Путин', id: 4 },
+		],
+		bookJacket: '/images/manga_1.png',
 		chapters: [
 			{
 				id: 1,

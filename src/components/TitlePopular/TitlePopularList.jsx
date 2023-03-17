@@ -1,7 +1,7 @@
 import React from 'react'
 import TitlePopular from './TitlePopular'
 import TitlePopularFilter from './TitlePopularFilter'
-import mangas from '../../../public/data'
+import mangas from '../../../data'
 
 const TitlePopularList = () => {
 	return (
