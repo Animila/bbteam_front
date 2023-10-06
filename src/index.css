@@ -3,28 +3,27 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: './assets/fonts/Gotham Pro/GothamPro-Regular.ttf'
+  font-family: "Gotham Pro";
+  src: "./assets/fonts/Gotham Pro/GothamPro-Regular.ttf";
 }
 
 @font-face {
-  font-family: 'Gotham Pro Black';
-  src: './assets/fonts/Gotham Pro/GothamPro-Black.ttf'
+  font-family: "Gotham Pro Black";
+  src: "./assets/fonts/Gotham Pro/GothamPro-Black.ttf";
 }
 
 @font-face {
-  font-family: 'Gotham Pro Medium';
-  src: './assets/fonts/Gotham Pro/GothamPro-Medium.ttf'
+  font-family: "Gotham Pro Medium";
+  src: "./assets/fonts/Gotham Pro/GothamPro-Medium.ttf";
 }
 
 @font-face {
-  font-family: 'Gotham Pro Bold';
-  src: './assets/fonts/Gotham Pro/GothamPro-Bold.ttf'
+  font-family: "Gotham Pro Bold";
+  src: "./assets/fonts/Gotham Pro/GothamPro-Bold.ttf";
 }
 
 :root {
   font-family: Gotham Pro, sans-serif;
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
