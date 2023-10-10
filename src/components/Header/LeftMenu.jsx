@@ -105,16 +105,16 @@ const LeftMenu = (props) => {
 
   return (
     <div
-      className={`md:absolute md:flex fixed z-[2] md:z-auto bg-filterBg ${
-        props.activeLeftMenu ? '' : 'hidden md:block'
+      className={`fixed z-[2] md:z-auto bg-filterBg ${
+        props.activeLeftMenu ? '' : 'hidden'
       }`}
     >
       <div
-        className={`fixed left-0 top-0 bg-black/80 w-full h-full md:h-auto md:w-auto z-[2] md:z-auto`}
+        className={`fixed left-0 top-0 bg-black/80 w-full h-full z-[2]`}
         onClick={props.handleActiveLeftMenu}
       ></div>
       <div
-        className={`fixed md:static left-0 top-0 z-[99] md:z-auto h-full min-w-[70%] md:h-auto md:w-auto bg-filterBg flex font-bold text-[15px] pt-8 flex-col md:flex-row text-white`}
+        className={`fixed left-0 top-0 z-[99] h-full min-w-[70%] bg-filterBg flex font-bold text-[15px] pt-8 flex-col text-white`}
         onClick={props.handleActiveLeftMenu}
       >
         {menu.map((url) => (
